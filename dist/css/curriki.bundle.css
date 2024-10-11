@@ -27,55 +27,14 @@ nav {
     transition: background-color 0.3s ease-in-out, color 0.1s ease;
 }
 
-
-::selection {
-    background-color: var(--primary);
-    color: var(--on-primary);
-}
-
-::-moz-selection {
-    background-color: var(--primary);
-    color: var(--on-primary);
-}
-
-details {
-    position: relative;
-    width: auto;
-    height: auto;
-    overflow: hidden;
-    background-color: var(--primary);
-    padding: 5px;
-    border-radius: 0.45rem;
-    margin: 5px;
-}
-
-.page-break-inside{
-    page-break-inside: avoid !important;
-}
-
-@media print {
-    header{
-        display: none !important;
-    }
-    body{
-        background-color: white !important;
-        background: white !important;
-    }
-    .delete-row-button{
-        display: none !important;
-    }
-    #add-row-button{
-        display: none !important;
-    }
-    #add-curricular-outcome{
-        display: none !important;
-    }
+article div{
+    height: 100%;
 }
 :root,
 body.light {
     --primary:#bc004b;
     --on-primary:#ffffff;
-    --primary-container:#ffd9de;
+    --primary-container:#ffffff;
     --on-primary-container:#400014;
     --secondary:#75565b;
     --on-secondary:#ffffff;
@@ -91,16 +50,16 @@ body.light {
     --on-error-container:#410002;
     --background:#fffbff;
     --on-background:#201a1b;
-    --surface:#fff8f7;
-    --on-surface:#201a1b;
+    --surface:#f5f5f5;
+    --on-surface:#1e1e1e;
     --surface-variant:#f3dddf;
     --on-surface-variant:#524345;
     --outline:#847375;
     --outline-variant:#d6c2c3;
     --shadow:#000000;
     --scrim:#000000;
-    --inverse-surface:#362f2f;
-    --inverse-on-surface:#fbeeee;
+    --inverse-surface:#363636;
+    --inverse-on-surface:#f7f7f7;
     --inverse-primary:#ffb2be;
     --surface-dim:#e3d7d8;
     --surface-bright:#fff8f7;
@@ -130,16 +89,16 @@ body.dark {
     --on-error-container:#ffb4ab;
     --background:#201a1b;
     --on-background:#ece0e0;
-    --surface:#181213;
-    --on-surface:#ece0e0;
+    --surface:#191919;
+    --on-surface:#ececec;
     --surface-variant:#524345;
     --on-surface-variant:#d6c2c3;
     --outline:#9f8c8e;
     --outline-variant:#524345;
     --shadow:#000000;
     --scrim:#000000;
-    --inverse-surface:#ece0e0;
-    --inverse-on-surface:#362f2f;
+    --inverse-surface:#e8e8e8;
+    --inverse-on-surface:#363636;
     --inverse-primary:#bc004b;
     --surface-dim:#181213;
     --surface-bright:#3f3738;
