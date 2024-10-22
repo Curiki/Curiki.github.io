@@ -30,9 +30,60 @@ nav {
 article div{
     height: 100%;
 }
+
+details {
+    position: relative;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    background-color: var(--on-surface);
+    padding: 5px;
+    border-radius: 0.45rem;
+    margin: 5px;
+}
+
+details[open] {
+    height: auto;
+    max-height: 99em !important;
+    border: 0.0625rem solid var(--on-surface) !important;
+    background-color: var(--surface);
+}
+
+summary {
+    outline: none;
+    font-size: 1.15em;
+}
+
+details summary::-webkit-details-marker,
+details summary::marker {
+    display: none;
+    content: "";
+}
+
+summary:before {
+    content: "⯈";
+    color: var(--surface);
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 0.5em 0 0.25em;
+}
+
+details[open] > summary:before {
+    content: "⯆";
+    color: var(--on-surface);
+}
+
+details:not([open]) summary{
+    color: var(--surface);
+}
+
+details[open] summary{
+    color: var(--on-surface);
+}
+
 :root,
 body.light {
-    --primary:#bc004b;
+    --primary:#bbbbbb;
     --on-primary:#ffffff;
     --primary-container:#ffffff;
     --on-primary-container:#400014;
@@ -65,13 +116,13 @@ body.light {
     --surface-bright:#fff8f7;
     --surface-container-lowest:#ffffff;
     --surface-container-low:#fdf1f1;
-    --surface-container:#f8ebeb;
+    --surface-container:#e1e1e1;
     --surface-container-high:#f2e5e6;
     --surface-container-highest:#ece0e0;
 }
 
 body.dark {
-    --primary:#ffb2be;
+    --primary:#eaeaea;
     --on-primary:#030303;
     --primary-container:#900038;
     --on-primary-container:#ffd9de;
@@ -104,7 +155,7 @@ body.dark {
     --surface-bright:#3f3738;
     --surface-container-lowest:#120d0d;
     --surface-container-low:#201a1b;
-    --surface-container:#241e1f;
+    --surface-container:#242424;
     --surface-container-high:#2f2829;
     --surface-container-highest:#3a3334;
 }
