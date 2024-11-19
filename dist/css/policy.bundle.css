@@ -3000,7 +3000,6 @@ details summary::marker {
 }
 
 summary:before {
-    content: "⯈";
     color: var(--on-primary);
     border-radius: 50%;
     text-align: center;
@@ -3008,7 +3007,6 @@ summary:before {
 }
 
 details[open] > summary:before {
-    content: "⯆";
     color: var(--primary);
 }
 
@@ -3080,7 +3078,8 @@ dialog p{
 }
 
 #content{
-    max-height: calc(100vh - 300px);
+    max-height: calc(100vh - 320px);
+    align-items: start;
 }
 
 article div{
