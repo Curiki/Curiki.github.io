@@ -61,7 +61,6 @@ details summary::marker {
 }
 
 summary:before {
-    content: "⯈";
     color: var(--surface);
     border-radius: 50%;
     text-align: center;
@@ -69,7 +68,6 @@ summary:before {
 }
 
 details[open] > summary:before {
-    content: "⯆";
     color: var(--on-surface);
 }
 
